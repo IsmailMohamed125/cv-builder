@@ -1,1 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.page {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60vw;
+  min-height: 140vh;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(0, 1fr) minmax(0, 2fr);
+}
+
+.personal-details {
+  grid-row: 1; /* Targets the first row */
+  height: 150px;
+  background-color: #0056b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.full-name {
+  font-size: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.3rem;
+}
+
+.education,
+.experience {
+  overflow: auto;
+}
+
+.education,
+.experience {
+  padding: 2.5rem;
+}
+
+.header {
+  background-color: #007bff;
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.dates-location {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 25%;
+}
+
+.dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.detail-university,
+.detail-company {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.forms {
+  margin-top: 20px;
+}
+
+.form-section {
+  margin-bottom: 40px;
+  min-width: 25rem;
+  /* width: 25rem; */
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.detail-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-item {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 3px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action-btn:hover {
+  cursor: pointer;
+}
+
+.education-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.btn-add {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="date"] {
+  appearance: none;
+}
+
+.submit-btn,
+.add-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font: inherit;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.submit-btn:hover,
+.add-btn:hover {
+  background-color: #0056b3;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
